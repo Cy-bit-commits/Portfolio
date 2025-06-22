@@ -15,6 +15,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
 
@@ -241,7 +242,7 @@
   text-shadow: var(--text-shadow);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1130px) {
   .container {
     width: 80%;
   }
@@ -259,55 +260,52 @@
     font-size: 1.1rem;
   }
 }
-@media (max-width: 480px) {
-  .nav-container {
-    height: 48px;
-    position: relative;
-  }
-  .nav-container nav {
-    height: 48px !important;
-    font-size: 1rem;
-    padding: 0 8px;
-  }
+@media (max-width: 600px) {
   .nav-container nav .logo {
-    font-size: 1.1rem;
-    margin-bottom: 0;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
   }
   .nav-container nav .nav-links {
-    gap: 8px !important;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
   }
   .nav-container nav .nav-links li {
-    font-size: 0.95rem;
-    padding: 4px 6px;
+    font-size: 1rem;
+    padding: 4px 0;
+  }
+  .nav-container nav #checkboxInput, .nav-container nav .toggleBtn {
+    align-self: flex-end;
+    margin: 4px 0;
   }
   .container {
-    width: 100%;
-    max-width: 98vw;
+    width: 100vw;
+    max-width: 100vw;
     min-width: 0;
     height: auto;
     min-height: 0;
-    padding: 12px 4px;
+    padding: 10px 2vw;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 0 8px var(--shadow-color);
   }
   .container h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     word-break: break-word;
   }
   .container p {
-    font-size: 1rem;
-    margin: 10px 0;
+    font-size: 0.95rem;
+    margin: 8px 0;
   }
   .container ul {
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 4px;
   }
   .container ul li {
-    margin: 4px 2px;
+    margin: 2px 1px;
   }
   .container ul li img {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 }/*# sourceMappingURL=scss.css.map */
