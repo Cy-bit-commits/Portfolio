@@ -297,6 +297,7 @@
             gap: 15px;
             li {
                 font-size: 1.1rem;
+
             }
         }
     }
@@ -304,6 +305,9 @@
 
 @media (max-width: 600px) {
     .nav-container {
+        width: 95%;
+        margin: 5px auto;
+        height: auto;
         
         nav {
             
@@ -311,7 +315,7 @@
             
             
             .logo {
-                font-size: 1.2rem;
+                font-size: .5rem;
                 margin-bottom: 8px;
             }
             .nav-links {
@@ -324,10 +328,15 @@
                     padding: 4px 0;
                 }
             }
-            #checkboxInput, .toggleBtn {
+            #checkboxInput{
+                margin: 10px;
+                display: none;
+                position: absolute;
+                .toggleBtn {
                 align-self: flex-end;
-                margin: 4px 0;
-                
+                margin: 6px 0;
+                left: 5px;
+            } 
             }
         }
     }
