@@ -43,6 +43,7 @@
 .social-links a {
   color: var(--text-color);
   font-size: 1.5rem;
+  background-color: ;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }

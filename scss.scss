@@ -1,3 +1,35 @@
+// Cosmic stars background
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  animation: twinkle var(--duration) infinite ease-in-out;
+  opacity: 0;
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
 :root {
     --bg-color: #100f0f;
     --text-color: white;
@@ -19,19 +51,21 @@
     transition: all 0.3s ease-in-out;
 }
 
-.main{
-    min-height: 200px; /* Example: Set minimum height to 200px */
-    overflow: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    min-height: 100vh;
-    margin: 0;
-    
+body {
+  background: transparent !important;
 }
+
+.main {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+  color: var(--text-color);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
 .social-links{
     position: fixed;
     bottom: 20px;

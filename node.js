@@ -1,3 +1,5 @@
+
+
 document.getElementById("checkboxInput").addEventListener("change", function(){
     const body = document.body;
     const main = document.querySelector('.main');
